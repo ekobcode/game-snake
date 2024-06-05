@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake AI Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="startButton">Start</button>
+    </div>
+    <div class="game-container">
+        <div>
+            <div class="description">Algoritma Dijkstra</div>
+            <canvas id="gameCanvasDijkstra" width="400" height="400"></canvas>
+            <div id="timerDijkstra">Time: 0</div>
+            <div id="gameOverDijkstra" class="game-over">Game Over! Score: <span id="scoreDijkstra"></span></div>
+        </div>
+        <div>
+            <div class="description">Algoritma A*</div>
+            <canvas id="gameCanvasAStar" width="400" height="400"></canvas>
+            <div id="timerAStar">Time: 0</div>
+            <div id="gameOverAStar" class="game-over">Game Over! Score: <span id="scoreAStar"></span></div>
+        </div>
+    </div>
+    <script src="algo1.js"></script>
+    <script src="algo2.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
